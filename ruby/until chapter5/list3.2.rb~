@@ -1,0 +1,7 @@
+#list 3.1
+
+puts "最初の引数: #{ARGV[0]}"
+puts "2の引数: #{ARGV[1]}"
+puts "3の引数: #{ARGV[2]}"
+puts "4の引数: #{ARGV[3]}"
+puts "5の引数: #{ARGV[4]}"
