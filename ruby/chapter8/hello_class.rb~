@@ -1,0 +1,20 @@
+class HelloWorld
+
+  def initialize(myname = "Ruby")
+
+
+    @neme = myname
+
+  end
+
+  def hello
+
+    puts "Hello,world . i am #{@name}"
+  end
+end
+
+bob = HelloWorld.new("Bob")
+alice = HelloWorld.new("Alice")
+ruby = HelloWorld.new
+
+bob.hello

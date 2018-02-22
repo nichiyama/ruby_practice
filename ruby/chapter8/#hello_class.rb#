@@ -1,0 +1,23 @@
+# coding: utf-8
+class HelloWorld  #クラス名はかならず大文字
+
+  def initialize(myname = "Ruby")
+
+
+    @name = myname #@で始まる変数はインスタンス変数という。
+    #インスタンス変数は、同じインスタンス内であればメソッド定義を超えてその値を参照したり、変更したりします。
+    
+
+  end
+
+  def hello
+
+    puts "Hello,world . i am #{@name}"
+  end
+end
+
+bob = HelloWorld.new("Bob")
+alice = HelloWorld.new("Alice")
+ruby = HelloWorld.new
+
+bob.hello
