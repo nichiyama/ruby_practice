@@ -1,0 +1,12 @@
+# coding: utf-8
+def qsort(data,light,left)
+
+  return if left >= right #二行目：ソート対象の件数が１以下ならなにもせずに反る　left =right　のとき要素数が１になることに注意
+  
+  pivot = data[(left + right) /2]　#枢軸を取り出しています
+
+  l, r = partitioning(data, pivot, left, right)
+
+  qsort(data, left, l-1)
+  qsort(data, r + 1, right)
+end
